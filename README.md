@@ -12,6 +12,7 @@ Data engineer in Pune. I build streaming and batch data pipelines, plus the .NET
 
 | | |
 |---|---|
+| [**flink2-check**](https://github.com/prajwal-jadhav01/flink2-check) | Finds what breaks before you move a Flink 1.x job to Flink 2.x: removed APIs in Java/Scala code, connectors with no 2.x release, dead config keys, and savepoint state (Kryo) that 2.x can't restore. Java CLI, rules generated from the Flink release notes and Maven Central. |
 | [**realtime-health-analytics**](https://github.com/prajwal-jadhav01/realtime-health-analytics) | Kafka → Flink (Java) → Pinot with auth on every Pinot component, dead-letter queue for bad records, Grafana dashboards. Starts with one `make up`. |
 | [**healthcare-lakehouse-spark**](https://github.com/prajwal-jadhav01/healthcare-lakehouse-spark) | The batch counterpart: PySpark + Delta Lake medallion pipeline (bronze → silver → gold) with data quality quarantine, de-identification, SCD2 via a single MERGE and idempotent re-runs. Same code on MinIO + Airflow and on Databricks. |
 | [**approval-workflow-api**](https://github.com/prajwal-jadhav01/approval-workflow-api) | ASP.NET Core 10 + Camunda 8 expense-approval API: role-based JWT, manager/finance approval paths, cancel at any step, idempotent workers, PostgreSQL. |
