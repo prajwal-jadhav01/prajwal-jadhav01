@@ -1,8 +1,8 @@
 ### Hi, I'm Prajwal 👋
 
-Data engineer in Pune. I build streaming data pipelines and the .NET services and CI/CD around them.
+Data engineer in Pune. I build streaming and batch data pipelines, plus the .NET services and CI/CD around them.
 
-- **Streaming data:** Apache Flink jobs feeding Apache Pinot for real-time analytics, orchestrated with Airflow, on PostgreSQL and Oracle sources, mostly in healthcare (HIPAA-aware handling of patient data).
+- **Data pipelines:** Apache Flink jobs (streaming and batch ETL) feeding Apache Pinot for real-time analytics, orchestrated with Airflow, on PostgreSQL and Oracle sources, mostly in healthcare (HIPAA-aware handling of patient data).
 - **Backend:** ASP.NET Core APIs with Camunda workflows for approvals.
 - **Delivery:** Docker, Jenkins, Grafana/Prometheus.
 
@@ -13,11 +13,12 @@ Data engineer in Pune. I build streaming data pipelines and the .NET services an
 | | |
 |---|---|
 | [**realtime-health-analytics**](https://github.com/prajwal-jadhav01/realtime-health-analytics) | Kafka → Flink (Java) → Pinot with auth on every Pinot component, dead-letter queue for bad records, Grafana dashboards. Starts with one `make up`. |
+| [**healthcare-lakehouse-spark**](https://github.com/prajwal-jadhav01/healthcare-lakehouse-spark) | The batch counterpart: PySpark + Delta Lake medallion pipeline (bronze → silver → gold) with data quality quarantine, de-identification, SCD2 via a single MERGE and idempotent re-runs. Same code on MinIO + Airflow and on Databricks. |
 | [**approval-workflow-api**](https://github.com/prajwal-jadhav01/approval-workflow-api) | ASP.NET Core 10 + Camunda 8 expense-approval API: role-based JWT, manager/finance approval paths, cancel at any step, idempotent workers, PostgreSQL. |
 | [**jenkins-pipeline-library**](https://github.com/prajwal-jadhav01/jenkins-pipeline-library) | One Jenkins shared library that replaces per-app, per-environment Jenkinsfiles: build, push, approval-gated prod deploys, automatic rollback. |
 
 #### Stack
 
-`Java` `C# / .NET` `SQL` · `Apache Flink` `Apache Pinot` `Kafka` `Airflow` · `PostgreSQL` `Oracle` · `ASP.NET Core` `Camunda` · `Docker` `Jenkins` `Grafana` `Prometheus` `Superset`
+`Java` `Python` `C# / .NET` `SQL` · `Apache Flink` `Apache Pinot` `Kafka` `PySpark` `Delta Lake` `Databricks` `Airflow` · `PostgreSQL` `Oracle` · `ASP.NET Core` `Camunda` · `Docker` `Jenkins` `Grafana` `Prometheus` `Superset`
 
 📫 [LinkedIn](https://www.linkedin.com/in/prajwal-jadhav-3ab508257)
